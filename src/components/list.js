@@ -10,10 +10,10 @@ const List=()=>{
         <>
         {
             list.map((element)=>(
-            <li style={(element.status ? {color:"green"} : {color:"red"} )}>{element.title}</li>
+            <li key={element.id} style={(element.status ? {color:"green"} : {color:"red"} )}>{element.title}</li>
         )
         )
-            }
+        }
         </>
        )
 }

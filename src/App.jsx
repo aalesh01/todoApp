@@ -1,11 +1,12 @@
 import './App.css';
 import React from "react";
- import List from './components/list';
+import List from './components/list';
+import MDetails from './components/moreDetails';
 
 
 
 function App() {
-  const [counter, setCounter] = React.useState(21);
+const [counter, setCounter] = React.useState(21);
 
 const IncrementHandler=(value)=>{
   setCounter(value+counter);
@@ -21,7 +22,7 @@ const IncrementHandler=(value)=>{
           <button onClick={()=>IncrementHandler(+1)}>Increase Age</button>
           <button onClick={()=>IncrementHandler(-1)}>Decrease Age</button>
         </div>
-        <button><h3> Show More Details </h3></button>
+        <MDetails/>
       </div>
       <div className="todoList App">
         <h1 >TODO LIST</h1>
