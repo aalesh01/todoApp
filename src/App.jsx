@@ -5,11 +5,12 @@ import React from "react";
 
 
 function App() {
-  const [counter, setCounter] = React.useState(0);
+  const [counter, setCounter] = React.useState(21);
 
 const IncrementHandler=(value)=>{
   setCounter(value+counter);
 };
+
   return (
     <div className="App-header">
       <div className="profile App Body">

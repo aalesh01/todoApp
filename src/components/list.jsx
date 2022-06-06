@@ -1,13 +1,20 @@
-const list =   [{ id: 1, title: "Wake up", status: true },
+
+const List=()=>{
+
+    const list =   [{ id: 1, title: "Wake up", status: true },
         { id: 2, title: "drink tea", status: false },
         { id: 3, title: "eat maggi", status: true },
         { id: 4, title: "sleep", status: false }];
 
-const List=()=>{
        return(
-           list.map(
-               <li>title</li>
-           )
+        <>
+        {
+            list.map((element)=>(
+            <li style={(element.status ? {color:"green"} : {color:"red"} )}>{element.title}</li>
+        )
+        )
+            }
+        </>
        )
 }
 
